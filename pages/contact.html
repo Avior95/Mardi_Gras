@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #titleLogo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+        }
+
+
+
+        @media (max-width:767px) {
+            #titleLogo {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            #titleLogo {
+                width: 60%;
+            }
+        }
+
+
+        body {
+            background-color: beige;
+
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 5px double #333;
+            color: #333;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+        }
+
+        hr:after {
+            background: #fff;
+            content: '§';
+            padding: 0 4px;
+            position: relative;
+            top: -13px;
+        }
+
+
+        #logo {
+            width: 80px;
+        }
+
+        .bg-info {
+            background-color: #9453a6 !important;
+        }
+
+        .item1 {
+            color: #8cbf3f !important;
+        }
+
+        .item2 {
+            color: #f2cc07 !important;
+        }
+
+        .item3 {
+            color: #f2f2f2 !important;
+        }
+
+        .item4 {
+            color: #0d0d0d !important;
+        }
+
+        .item5 {
+            color: #8cbf3f !important;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the links */
+        footer a {
+            color: #f2f2f2;
+            text-decoration: none;
+
+        }
+
+        /* Change the color of the links when hovered */
+        footer a:hover {
+            transform: scale(0.9);
+            background-color: white;
+            color: #0d0d0d;
+        }
+
+        .footer-links {
+            color: #f2f2f2;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+        }
+
+
+        .contact-area {
+            background: url(../img/bg/contact-bg.png) no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        @media only screen and (max-width:768px) {
+            .contact {
+                margin-bottom: 60px;
+            }
+        }
+
+        .contact input {
+            background: #fff;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            color: #232434;
+            font-size: 16px;
+            height: 60px;
+            padding: 10px;
+            width: 100%;
+            font-family: 'poppins', sans-serif;
+            padding-left: 30px;
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+        }
+
+        .contact textarea {
+            background: #fff;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            color: #232434;
+            font-size: 16px;
+            padding: 10px;
+            width: 100%;
+            font-family: 'poppins', sans-serif;
+            padding-left: 30px;
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+        }
+
+        .contact input:focus {
+            background: #fff;
+            border: 1px solid #fff;
+            color: #232434;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            outline: 0 none;
+        }
+
+        .contact textarea:focus {
+            background: #fff;
+            border: 1px solid #fff;
+            color: #232434;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            outline: 0 none;
+        }
+
+        .form-control::placeholder {
+            color: #232434;
+            opacity: 1;
+        }
+
+        .btn-contact-bg {
+            border-radius: 30px;
+            color: #fff;
+            outline: medium none !important;
+            padding: 15px 27px;
+            text-transform: capitalize;
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            background: #7564e5;
+            font-family: 'poppins', sans-serif;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-contact-bg:hover,
+        .btn-contact-bg:focus {
+            background: #232434;
+            color: #fff;
+        }
+
+        /*START ADDRESS*/
+
+        .single_address {
+            overflow: hidden;
+            margin-bottom: 10px;
+            padding-left: 40px;
+        }
+
+        @media only screen and (max-width:768px) {
+            .single_address {
+                padding-left: 0px;
+            }
+        }
+
+        .single_address i {
+            background: #f6f6f6;
+            color: #7564e5;
+            border-radius: 30px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            float: left;
+            margin-right: 14px;
+            font-size: 22px;
+            -webkit-box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+        }
+
+        .single_address:hover i {
+            background: #7564e5;
+            color: #fff;
+        }
+
+        .single_address h4 {
+            font-size: 18px;
+            margin-bottom: 0px;
+            overflow: hidden;
+            font-weight: 600;
+        }
+
+        .single_address p {
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        .section-title h1 {
+            font-size: 44px;
+            font-weight: 500;
+            margin-top: 0;
+            position: relative;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            padding: 0 10px;
+            width: 70%;
+            margin: auto;
+            letter-spacing: 1px;
+        }
+
+        .section-title {
+            margin-bottom: 60px;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-info ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="/imgs/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon ">&#9776</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link active item1" aria-current="page" href="./HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item2" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item3" href="./media.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item4" href="./FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item5" href="./contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="titleDiv">
+        <img id="titleLogo" src="./titleLogo.webp" alt="">
+
+    </div>
+    <div id="contact" class="contact-area section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1>Get in Touch</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis
+                    dignissim. Aenean vitae metus in augue pretium ultrices.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="contact">
+                        <form class="form" name="enq" method="post" action="contact.php"
+                            onsubmit="return validation();">
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <input type="text" name="name" class="form-control " placeholder="Name"
+                                        required="required" id="register-input-name">
+                                </div>
+                                <div class=" alert alert-danger d-none " role="alert" id="register-alert-name">
+                                    please fill out this field.
+                                </div>
+
+                                <div class="form-group col-md-12">
+                                    <input type="email" name="email" class="form-control" placeholder="Email"
+                                        required="required" id="register-input-email">
+                                </div>
+                                <div class=" alert alert-danger d-none " role="alert" id="register-alert-email">
+                                    Please enter a valid email address.
+                                </div>
+                                <div class=" alert alert-danger d-none " role="alert" id="register-alertEmpty-email">
+                                    please fill out this field.
+                                </div>
+
+                                <div class="form-group col-md-12">
+                                    <input type="text" name="subject" class="form-control" placeholder="Lest Name"
+                                        required="required" id="register-input-lest Name">
+                                </div>
+                                <div class=" alert alert-danger d-none " role="alert" id="register-alert-lest Name">
+                                    please fill out this field.
+                                </div>
+
+
+                                <div class="form-group col-md-12">
+                                    <textarea rows="6" name="message" class="form-control" placeholder="Your Message"
+                                        required="required" id="register-input-message"></textarea>
+                                </div>
+                                <div class=" alert alert-danger d-none " role="alert" id="register-alert-message">
+                                    please fill out this field.
+                                </div>
+
+
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" value="Send message" name="submit" id="submitButton"
+                                        class="btn btn-contact-bg" title="Submit Your Message!">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!--- END COL -->
+                <div class="col-lg-5">
+                    <div class="single_address">
+                        <i class="fa fa-map-marker"></i>
+                        <h4>Our Address</h4>
+                        <p>1010 Conti St, New Orleans, LA 70112,US</p>
+                    </div>
+                    <div class="single_address">
+                        <i class="fa fa-envelope"></i>
+                        <h4>Send your message</h4>
+                        <p>press@mardigrasneworleans.com</p>
+                    </div>
+                    <div class="single_address">
+                        <i class="fa fa-phone"></i>
+                        <h4>Call us on</h4>
+                        <p>(+1)5042184872</p>
+                    </div>
+                    <div class="single_address">
+                        <i class="fa fa-clock-o"></i>
+                        <h4>Mardi Gras festival🎊✨</h4>
+                        <p>Mon - Fri: 08.00 - 16.00. <br>Sat: 10.00 - 14.00</p>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+        </div><!--- END CONTAINER -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="weather">
+        <iframe frameborder="0" height="210" id="forecast_embed"
+            src="https://forecast.io/embed/#lat=29.951066&lon=-90.071532&name=New Orleans&color=#F3D738"
+            type="text/html" width="100%"></iframe>
+        </iframe>
+        <a class="weather_link" href="/weather">&nbsp;</a>
+    </div>
+
+
+    <br>
+    <br>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55305.13815808594!2d-90.00310063362119!3d29.963012150911336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a60eb307c4f5%3A0x51fdf436dd372ab2!2sMardi%20Gras%20Museum%20of%20Costumes%20%26%20Culture!5e0!3m2!1siw!2sil!4v1673361948651!5m2!1siw!2sil"
+        width="100%" height="450" style="border: 10px;;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="navbar-dark  bg-secondary bg-gradient">
+        <h5 style="color: #f2f2f2;">Copyright © 1996-2023 MardiGrasNewOrleans.com</h5>
+        <p style="color: #f2f2f2;">Contact: <a href="aviork9@gmail.com">aviork9@gmail.com</a></p>
+        <p>
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script>
+        const inputName = document.getElementById('register-input-name')
+        const inputEmail = document.getElementById("register-input-email");
+        const inputMessage = document.getElementById("register-input-message");
+        const inputLestName = document.getElementById("register-input-lest Name");
+        // const inputEmail = document.getElementById("register-input-email");
+
+
+        inputName.addEventListener("change", () => {
+            if (inputName.value.length === 0) document.getElementById("register-alert-name").classList.remove("d-none");
+            else document.getElementById("register-alert-name").classList.add("d-none");
+        });
+
+        inputEmail.addEventListener("change", () => {
+            const reg = new RegExp(
+                "^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$",
+                "ig"
+            );
+            if (reg.test(inputEmail.value) === false) {
+                document.getElementById("register-alert-email").classList.remove("d-none");
+                if (inputEmail.value.length === 0) {
+                    document.getElementById("register-alert-email").classList.add("d-none");
+                    document.getElementById("register-alertEmpty-email").classList.remove("d-none");
+
+                }
+            } else {
+                document.getElementById("register-alert-email").classList.add("d-none");
+            }
+        });
+
+
+        inputLestName.addEventListener("change", () => {
+            if (inputLestName.value.length === 0) document.getElementById("register-alert-lest Name").classList.remove("d-none");
+            else document.getElementById("register-alert-lest Name").classList.add("d-none");
+
+
+        });
+        inputMessage.addEventListener("change", () => {
+            if (inputMessage.value.length === 0) document.getElementById("register-alert-message").classList.remove("d-none");
+            else document.getElementById("register-alert-message").classList.add("d-none");
+
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- 
+לעשות את כול השדות placeholder . -->

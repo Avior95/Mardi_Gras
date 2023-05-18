@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-us</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Pattaya';
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #logo {
+            width: 80px;
+        }
+
+        #img {
+            text-align: center;
+            display: block;
+        }
+
+        #titleLogo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+        }
+
+
+        @media (max-width:767px) {
+            #titleLogo {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            #titleLogo {
+                width: 60%;
+            }
+        }
+
+
+        #about-section {
+            background: beige;
+            position: relative;
+        }
+
+
+        h2,
+        h3,
+        h4 {
+            display: flex;
+            /* horizontal center */
+            justify-content: center;
+            /* vertical center */
+            align-items: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        article img {
+            width: 20vw;
+
+        }
+
+        body {
+            background-color: beige;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 5px double #8cbf3f;
+            color: #333;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+        }
+
+        hr:after {
+            background: #fff;
+            content: '§';
+            padding: 0 4px;
+            position: relative;
+            top: -13px;
+        }
+
+        .card-text {
+            text-align: center;
+            margin-right: 110px;
+        }
+
+        .card-title {
+            text-align: center;
+        }
+
+        .card-body {
+            text-align: center;
+            background-color: #8cbf3f;
+            margin-right: 20px;
+
+        }
+
+        .col-md-8 {
+            background-color: #8cbf3f
+        }
+
+        .col-md-4 {
+            background-color: #8cbf3f
+        }
+
+
+        .bg-info {
+            background-color: #9453a6 !important;
+        }
+
+        .item1 {
+            color: #8cbf3f !important;
+        }
+
+        .item2 {
+            color: #f2cc07 !important;
+        }
+
+        .item3 {
+            color: #f2f2f2 !important;
+        }
+
+        .item4 {
+            color: #0d0d0d !important;
+        }
+
+        .item5 {
+            color: #8cbf3f !important;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the links */
+        footer a {
+            color: #f2f2f2;
+            text-decoration: none;
+
+        }
+
+        /* Change the color of the links when hovered */
+        footer a:hover {
+            transform: scale(0.9);
+            background-color: white;
+            color: #0d0d0d;
+        }
+
+        .footer-links {
+            color: #f2f2f2;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-info ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="/imgs/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon ">&#9776</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link active item1" aria-current="page" href="./HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item2" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item3" href="./media.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item4" href="./FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item5" href="./contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <div class="titleDiv">
+        <img id="titleLogo" src="/imgs/titleLogo.webp" alt="">
+
+    </div>
+    <article>
+        <br>
+        <hr>
+        <h2>Mardi Gras traditional</h2>
+        <p>Mardi Gras is about music, parades, picnics, floats and excitement. It's one big holiday in New Orleans!
+            Revelers know to wear costumes or at least dress in purple, green, and gold, and adorn themselves with
+            long
+            beads caught from the floats of previous parades. You'll see a lot of crazy costumes, kids with their
+            families are everywhere, and both locals and visitors having a great time. Parade goers will sit on the
+            ground, throw balls, play music, eat great food and watch the crowds walk by between parades. On Mardi
+            Gras
+            day, the majority of non-essential businesses are shut down because of the celebration.</p>
+
+        <p> Experienced revelers know to bring a large bag with them so they can haul away all the beads and
+            trinkets
+            they will catch from the parades!
+            Every year, we get a lot of questions about how it all begin, and how the traditions have changed.
+            Click on
+            the buttons below to find out the answers to some of the most frequently asked questions.</p>
+        <h4>Mardi Gras beads&Throws</h4>
+        <p> So what are "throws?" Well, they are exactly what they sound like - items that krewe members on <br>
+            floats
+            throw
+            to
+            parade-goers as the floats pass by! Throws often include doubloons, beads, cups, homemade trinkets, toys
+            and
+            more!</p>
+        <div id="img">
+            <img src="/imgs/mardi4.jpg" alt="">
+            <img src="/imgs/mardi11.jpg" alt="">
+            <img src="/imgs/mardi6.jpg" alt="">
+        </div>
+        <p>The throwing of trinkets to the crowds was started in the early 1870s by the Twelfth Night Revelers, and
+            is a
+            time-honored expectation for young and old alike.
+            In 1884, Rex started using medallions instead of trinkets. These medallions are represented by today's
+            doubloons, aluminum and anodized in many different colors. They depict the parade theme on one side and
+            the
+            Krewe's emblem on the other. They have become collectors item</p>
+        <h4>Flambeaux</h4>
+        <p>Flambeaux (plural for flambeau, or a flaming torch) comes from the French word flambe, meaning “flame.”
+            The
+            first
+            official Mardi Gras flambeaux debuted with the Mistick Krewe of Comus on Fat Tuesday in 1857. </p>
+
+        <p> In the beginning, the flambeaux were needed for revelers to see the Carnival parades at night.
+            Originally,
+            the
+            flambeaux carried wooden rudimentary torches, which were staves wrapped with lit pine-tar rags. That
+            evolved
+            to
+            oil-burning lanterns mounted on metal trays and long poles to prevent the flames from burning the
+            carriers.
+        </p>
+
+        <p> Flambeaux was a tradition that arose out of necessity but also illustrated elements of emerging American
+            culture
+            and social classes, as the flambeaux were originally carried by slaves and free men of color, namely
+            Creoles.
+            The torches turned into a spectacle as the men waved and twirled the torches while dancing down the
+            street.
+            Parade-watchers would throw tips to the torch carriers, often 25-cent or 50-cent coins, more in response
+            to
+            the
+            elaborate performances than the light itself.</p>
+    </article>
+    <br>
+    <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="/imgs/mayor2.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">LaToya Cantrell
+                        Mayor of New Orleans</h5>
+                    <p class="card-text"> As Mayor of the great City of New Orleans, I invite you to visit our city to
+                        experience
+                        the excitement of Mardi Gras! <br>
+                        Spectacular parades with colorful, creative floats start rolling before Mardi Gras Day.
+                        Our private Carnival clubs, called krewes, take on royalty status and throw beads,
+                        doubloons and toys to parade goers. Visitors quickly learn to say, "Throw me something
+                        mister!"<br>
+
+                        The culmination of Mardi Gras in New Orleans begins early on Mardi Gras Day when the
+                        Zulu Social Aid & Pleasure Club and the Rex Organization parade through the city. Music,
+                        food and elaborate costumes add to the fun-filled day of excitement for revelers of all
+                        ages..</p>
+                    <p class="card-text"><small class="text-muted"> </small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <footer class="navbar-dark  bg-secondary bg-gradient">
+        <h5 style="color: #f2f2f2;">Copyright © 1996-2023 MardiGrasNewOrleans.com</h5>
+        <p style="color: #f2f2f2;">Contact: <a href="aviork9@gmail.com">aviork9@gmail.com</a></p>
+        <p>
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css.css"> -->
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: beige;
+
+
+        }
+
+        h1,
+        h5 {
+            font-family: 'Henny Penny';
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 5px double #333;
+            color: #333;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+        }
+
+        hr:after {
+            background: #fff;
+            content: '§';
+            padding: 0 4px;
+            position: relative;
+            top: -13px;
+        }
+
+        #logo {
+            width: 80px;
+        }
+
+        .bg-info {
+            background-color: #9453a6 !important;
+        }
+
+        .item1 {
+            color: #8cbf3f !important;
+        }
+
+        .item2 {
+            color: #f2cc07 !important;
+        }
+
+        .item3 {
+            color: #f2f2f2 !important;
+        }
+
+        .item4 {
+            color: #0d0d0d !important;
+        }
+
+        .item5 {
+            color: #8cbf3f !important;
+        }
+
+        .carousel .carousel-item {
+            height: 650px;
+        }
+
+        .carousel-item img {
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            min-height: 650px;
+        }
+
+        .carousel-inner {
+            background-color: beige;
+
+        }
+
+
+        @media screen and (max-width:992px) {
+            #carouselExampleCaptions {
+                display: none;
+            }
+
+            .responsive-img {
+                height: 50vh !important;
+                width: 100% !important;
+            }
+        }
+
+        .container {
+            width: 1000px;
+            display: block;
+            background-color: beige;
+
+        }
+
+        .card1 {
+            background-color: #9453a6;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .card2 {
+            background-color: #8cbf3f;
+            margin: 10px;
+            border-radius: 20px;
+
+
+        }
+
+        .card3 {
+            background-color: #f2cc07;
+            margin: 10px;
+            border-radius: 20px;
+
+
+        }
+
+        .card4 {
+            background-color: #9453a6;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .card5 {
+            background-color: #8cbf3f;
+            margin: 10px;
+            border-radius: 20px;
+
+
+        }
+
+        .card6 {
+            background-color: #f2cc07;
+            margin: 10px;
+            border-radius: 20px;
+
+
+        }
+
+        .card7 {
+            background-color: #9453a6;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .card8 {
+            background-color: #8cbf3f;
+            margin: 10px;
+            border-radius: 20px;
+
+
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the links */
+        footer a {
+            color: #f2f2f2;
+            text-decoration: none;
+
+        }
+
+        /* Change the color of the links when hovered */
+        footer a:hover {
+            transform: scale(0.9);
+            background-color: white;
+            color: #0d0d0d;
+        }
+
+        .footer-links {
+            color: #f2f2f2;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-info ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="/imgs/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon ">&#9776</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link active item1" aria-current="page" href="./HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item2" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item3" href="./media.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item4" href="./FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info item5" href="./contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <img class="responsive-img  d-block d-lg-none" src="/imgs/mardi1.jpg" alt="">
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/imgs/mardi1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Maske</h5>
+                    <p>Traditional masks are usually worn during the festival</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/imgs/mardi11.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Festival</h5>
+                    <p>Festival at night.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/imgs/mardi7.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Maske</h5>
+                    <p>Traditional masks are usually worn during the festival.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="/imgs/mardi22.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Maske</h5>
+                    <p>Traditional masks are usually worn during the festival.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/imgs/mardi23.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Maske</h5>
+                    <p>Traditional masks are usually worn during the festival.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/imgs/mardi5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Maske</h5>
+                    <p>Traditional masks are usually worn during the festival.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/imgs/mardi3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Maske</h5>
+                    <p>Traditional masks are usually worn during the festival.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <br>
+    <article>
+        <h1> A glimpse into the past</h1>
+
+        <hr>
+        <p>The origins of Mardi Gras can be traced to medieval Europe, passing through Rome and Venice in the 17th
+            and
+            18th centuries to the French House of the Bourbons. From here, the traditional revelry of "Boeuf Gras,"
+            or
+            fatted calf, followed France to her colonies. </p>
+
+        <p>
+            In 1704, Mobile established a secret society (Masque de la Mobile), similar to those that form our
+            current
+            Mardi Gras krewes. It lasted until 1709. In 1710, the "Boeuf Gras Society" was formed and paraded from
+            1711
+            through 1861. The procession was held with a huge bull's head pushed along on wheels by 16 men. Later,
+            Rex
+            would parade with an actual bull, draped in white and signaling the coming Lenten meat fast. This
+            occurred
+            on Fat Tuesday. New Orleans was established in 1718 by Bienville. By the 1730s, Mardi Gras was
+            celebrated
+            openly
+            in New
+            Orleans, but not with the parades we know today. In the early 1740s, Louisiana's governor, the Marquis
+            de
+            Vaudreuil, established elegant society balls, which became the model for the New Orleans Mardi Gras
+            balls of
+            today.</p>
+
+        The earliest reference to Mardi Gras "Carnival" appears in a 1781 report to the Spanish colonial governing
+        body. That year, the Perseverance Benevolent & Mutual Aid Association was the first of hundreds of clubs and
+        carnival organizations formed in New Orleans.
+
+        By the late 1830s, New Orleans held street processions of maskers with carriages and horseback riders to
+        celebrate Mardi Gras. Dazzling gaslight torches, or "flambeaux," lit the way for the krewe's members and
+        lent each event an exciting air of romance and festivity. In 1856, six young Mobile natives formed the
+        Mistick Krewe of Comus, invoking John Milton's hero Comus to represent their organization. Comus brought
+        magic and mystery to New Orleans with dazzling floats (known as tableaux cars) and masked balls. Krewe
+        members remained anonymous.</p>
+        <hr>
+    </article>
+    <br>
+    <br>
+    <br>
+    <div class=" centerCard">
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card1">
+                    <img src="/imgs/card1.png" class="card-img-top" alt="A Street in Europe">
+                    <div class="card-body">
+                        <h5 class="card-title"> WALK ON'S®</h5>
+                        <p class="card-text">Walk-On’s® founders Brandon Landry and Jack Warner became fast friends
+                            as a
+                            pair of
+                            walk-ons (unrecruited and unsigned athletes who are unwilling to give up on their dream
+                            of
+                            being
+                            college athletes) on the Louisiana State University basketball team. Both worked hard
+                            and
+                            practiced
+                            even harder to earn and keep their spots on the team.</p>
+                        <a href="https://walk-ons.com/" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card2">
+                    <img src="/imgs/card2.png" class="card-img-top" alt="London">
+                    <div class="card-body">
+                        <h5 class="card-title">Sheraton New Orleans Hotel</h5>
+                        <p class="card-text">Brimming with style and
+                            grounded in our community, Sheraton New Orleans Hotel is the perfect home base for your
+                            downtown
+                            escape.
+                            Located on Canal Street, our hotel is steps from the buzz of the French Quarter, and
+                            also
+                            offers
+                            seamless access to notable
+                            Center,
+                            Caesars Superdome and Smoothie King Center.</p>
+                        <a href="https://www.marriott.com/en-us/hotels/msyis-sheraton-new-orleans-hotel/overview/"
+                            class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card3">
+                    <img src="/imgs/card3.jfif" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">New Orleans Ace Hotel</h5>
+                        <p class="card-text">Ryan “phlegm” Gilbert is a New Orleans born and based visual artist who
+                            works
+                            in
+                            facepainting and self portraiture. He is inspired by Black cultural tone from across the
+                            diaspora;
+                            pulling inspiration from the Black Masking Indians of New Orleans, the Dogon of Mali,
+                            the
+                            Fulani
+                            of
+                            Nigeria, and the Zouli dance of Ivory Coast. He is a self-taught art.</p>
+                        <a href="https://www.booking.com/searchresults.he.html?aid=329424&label=ace-new-orleans-3ASKsEJx1lYDuQVHvmwsfgS383169452337%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-193415674084%3Alp1007986%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfrNUYPrH8yky7Vijh-Rph0&sid=ed01bb9b5a709e4e888be67cb827ddde&city=20050264&expand_sb=1&highlighted_hotels=1683327&hlrd=no_dates&keep_landing=1&redirected=1&source=hotel&gclid=CjwKCAiAwc-dBhA7EiwAxPRylHAWu45EHZ0UsRCCdmop1X9QJ5YGQWwZz8-5dPVLCAO3nLu2pcNenxoClbsQAvD_BwE&room1=A,A,;"
+                            class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card4">
+                    <img src="/imgs/card4.png" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ritz-Carlton, New Orleans</h5>
+                        <p class="card-text">Street as the sounds of famed jazz clubs, scents of Cajun cuisine and
+                            local
+                            cocktails tempt the senses. Discover local crafts along the quieter streets of the
+                            French
+                            Market
+                            before enjoying Jackson Square’s street performers and the breathtaking beauty of St.
+                            Louis
+                            Cathedral – the oldest cathedral in the United States.</p>
+                        <a href="https://www.ritzcarlton.com/en/hotels/new-orleans" class="btn btn-primary">Go
+                            somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card5">
+                    <img src="/imgs/card5.png" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Parking - P402</h5>
+                        <p class="card-text">With Vivid Seats, you can experience it live, with Tampa Bay Buccaneers
+                            Parking
+                            tickets for all the events in 2023 and 2024.
+                            Browse Tampa Bay Buccaneers Parking tickets and all NFL Football tickets and earn Reward
+                            Credit
+                            when tickets for all the events in 2023 and 2024.
+
+                            you buy thanks to Vivid Seats Rewards. Life happens live!.</p>
+                        <a href="https://www.premiumparking.com/P402" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card6">
+                    <img src="/imgs/card6.png" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">Louisiana Children's Museum</h5>
+                        <p class="card-text">The Louisiana Children's Museum (LCM) has taken their endless
+                            opportunities
+                            to
+                            explore, experience and learn outside to their new home in New Orleans City Park.
+                            This brand new campus features 8.5 acres of interactive programming and exhibits, themed
+                            activity
+                            and education centers, ample outdoor space, and local touches. .</p>
+                        <a href="https://www.sichildrensmuseum.org/" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card7">
+                    <img src="/imgs/card7.jfif" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">Museum of Death</h5>
+                        <p class="card-text">Since 1996, Holocaust Museum Houston has been committed to honoring
+                            Holocaust
+                            survivors’ legacy and ensuring Houston Survivor stories live on in perpetuity. This
+                            annual
+                            exhibition offers a video introduction of Houston Holocaust Survivors featuring family
+                            members’
+                            testimonies and clips of Survivors telling their stories. Family artifacts will also be
+                            showcased</p>
+                        <a href="http://www.museumofdeath.net/" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card8">
+                    <img src="/imgs/card8.png" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">Haunted Museum</h5>
+                        <p class="card-text">The Milford Museum is located in Milford's original post office
+                            building on
+                            the
+                            corner of South Walnut Street and South East Second Street. In 1962, the building
+                            switched
+                            hands
+                            to corner of South Walnut Street and South East Second Street. In 1962, the building
+                            switched
+                            hands
+                            fall underEast Second Street. In 1962, the building
+                            switched
+                            1962-1983,
+                            thecompensation</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <hr>
+    <footer class="navbar-dark  bg-secondary bg-gradient">
+        <h5 style="color: #f2f2f2;">Copyright © 1996-2023 MardiGrasNewOrleans.com</h5>
+        <p style="color: #f2f2f2;">Contact: <a href="aviork9@gmail.com">aviork9@gmail.com</a></p>
+        <p>
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </footer>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</body>
+
+</html>
